@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+body{
+    background: linear-gradient(rgb(130, 0, 0), rgb(120, 39, 196),rgb(148, 22, 81),rgb(71, 46, 71));
+    margin:2rem 3%;
+}
+ul,ol,li,a{
+    text-decoration: none;
+
+}
+h3{
+    font-weight: bold;
+    font-size: 40px;
+     padding: 2% 4%;
+    color: white;
+}
+h2{
+   font-size:  50px;
+}
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 40px;
+    }
+
+header h1{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+nav ul{
+    display: flex;
+flex-direction: row;
+align-items: center;
+   
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 19px;
+    padding: 0 10px;
+    
+}
+
+header a:hover{
+    color: blue;
+}
+/*title*/
+.title{ 
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+   color: bisque; 
+   justify-content: space-between;
+    
+}
+.title ul{
+    display:flex;
+    justify-content: space-between;
+    font-size: 20px;;
+    margin: 8% 3% 0 0;
+    color: white;
+}
+.title a:hover{
+    color: rgb(252, 252, 255);
+}
+.title a{
+    color: rgb(12, 12, 12);
+}
+.esquerda{
+    width: 55%;    margin-left: 4rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.esquerda h2{ 
+    font-size: 69px;
+    }
+.esquerda p{
+    font-size: 22px;
+    margin:6% 3% 0 0 ;
+}
+.profile{
+    height: 500px;
+     border-radius: 50%;
+     margin-bottom: 3rem;
+     
+}
+/*about*/
+.about-me {
+    color: blueviolet;
+    background-color:rgb(247, 244, 244);
+    padding: 40px;
+    font-size:20px;
+}
+.about-me h3{
+  text-align: left;
+  color: blueviolet;
+  padding:0;
+  text-transform: uppercase;
+    
+}
+.assinatura{
+   font-style: italic; 
+}
+/*skills*/
+.skills h3{
+    color: rgb(233, 233, 233);
+}
+.skills ul{
+    display: flex;
+    justify-content:space-between ;
+   
+}
+.itens-skills{
+    text-transform: uppercase;
+    border: 1px groove rgb(102, 56, 133);
+  
+    background-color: rgb(236, 236, 236);
+    padding: 2rem 2rem;
+    color: rgb(57, 101, 194);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 9%;
+    margin-bottom: 30px;
+   }
+/* Academic*/   
+#formacao{
+    color: blueviolet;
+}
+.academic{
+    
+    background-color:  rgb(227, 196, 229);
+    color: rgb(154, 31, 179);
+}
+
+.courses ul{
+    display:flex;
+    flex-direction: row;
+    margin: 0 5%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+.course-title{
+    padding: 1%;
+}
+.course-img{
+    max-height: 200px;
+}
+/*projects*/
+.projects{
+    margin-top:4% ;
+}
+section .title-projects{
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    font-size: 50px;
+    text-transform:uppercase;
+}
+.box-projects{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.experiencia-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4%;
+}
+.experiencia-box img{
+    border-radius:5%;
+    max-width: 700px;
+    min-width: 700px;
+}
+.info-container{
+    color: rgb(83, 3, 121);
+    margin: 0 4rem;
+}
+.experience-repo button{
+    margin-top: 2rem;
+    background-color: #e6e6e6;
+    border-radius: 24px;
+    color: rgb(181, 15, 187);
+    cursor: pointer;
+    transition: all 0.5s;
+    height: 67px;
+    width: 328px;
+}
+.experience-repo button:hover{
+    background-color: #4e1b88;
+}
+
+/*contact*/
+.contact{
+    border: 2px dashed white;
+    border-radius: 5%;
+}
+.box-contact{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 0 10%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 1rem 3rem;
+}
+.contato-input, .contato-textarea{
+    margin-top: 4%;  
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+  
+}
+.contato_botao{
+    margin-top: 2rem;
+    background-color: #4e1b88;
+    border-radius: 24px;
+    color: rgb(228, 226, 228);
+    cursor: pointer;
+    transition: all 0.5s;
+    height: 67px;
+    width: 328px;
+    border: none;
+}
+.contato_botao:hover{
+    background: rgba(238, 17, 219, 0.733);
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
