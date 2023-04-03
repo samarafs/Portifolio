@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <title>Portifólio</title>
 </head>
 <body>
     <section class="menu">
     <header>
-        <h1> ✦ Samara Santos</h1>
+        <h1 id="nome"> ✦ Samara Santos</h1>
         <nav>           
             <ul class="menu-itens">
                 <li class="itens"><a href="#title">Home</a></li>   
@@ -25,33 +28,32 @@
 </section>
     <main>
         <section class="title">
-            <div class="esquerda">
+            <div class="title-info">
             <h2> 👾Olá, sou Samara e construo páginas web</h2>
             <p>Faço graduação de Ciência da Computação na Unifg e atualmente estou participando
                  do projeto Oracle ONE na Alura</p>
-            <ul class="contato">
-                <li>
+                <ul class="redes-sociais">
+                    <li>
                     <a href="https://github.com/samarafs">Github</a>
-                    <img src="imagens/github.png" height=20px alt="">
+                    <img class="logo-rede" src="imagens/github.png" alt="">
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/samarafs3/">Linkedin</a>
-                    <img src="imagens//linkedin.png" height=20px alt="">
+                    <img class="logo-rede" src="imagens//linkedin.png" alt="">
                 </li>
                 <li>
                     <a href="https://www.instagram.com/samara.f.s/">Instagram</a>
-                    <img src="imagens/instagram (1).png" height=20px alt="">
+                    <img class="logo-rede" src="imagens/instagram (1).png" alt="">
                 </li>
                 <li>
                     <a href="imagens/CV - SAMARA SANTOS (2).pdf">Currículo</a>
-                    <img src="imagens/download.png" height=20px alt="">
+                    <img class="logo-rede" src="imagens/download.png" alt="">
                 </li>
             </ul>
-                </div>
-            <img src="imagens/eu.jpeg" alt="foto minha" class="profile">
+                </div><img src="imagens/eu.jpeg" alt="foto minha" class="profile">
         </section>
          <section class="about-me" id="about-me">
-            <h3>About me</h3>
+            <h3 class="section-title">About me</h3>
             <p><br>Olá, Chamo-me Samara, tenho 18 anos e mudei-me para Lisboa em Janeiro. Sou uma pessoa muito honesta, entusiasmada, determinada e descontraída.
                 No momento, estou muito ansiosa para começar a desenvolver a minha carreira profissional e continuar meus estudos.
                 Sou uma pessoa dinâmica e trabalhadora. Comecei a universidade no ano passado,mas estudo programação desde o ensino médio, na escola técnica de Pernambuco. Há um pouco mais a meu respeito no currículum em anexo.
@@ -61,7 +63,7 @@
             <em class="assinatura "alt="assinatura"> Samara Santos</em>
         </section>    
         <section class="skills">
-            <h3>Skills</h3>
+            <h3 class="section-title">Skills</h3>
             <ul>
                 <li class="itens-skills">
                     <img src="imagens/htlm.png"  alt="">
@@ -112,7 +114,7 @@
             <h3 class="title-projects">Projects</h3>
             <div class="box-projects">
                 <div class="experiencia-box">
-                    <img src="imagens/codificador.png">
+                    <img id="img-projeto" src="imagens/codificador.png">
                     <div class="info-container">
                         <h2>Decodificador de texto</h2>
                         <h3>Challenge Alura Codificador </h3>
@@ -124,10 +126,10 @@
                     </div>
                     <div class="box-projects">
                         <div class="experiencia-box">
-                            <img src="imagens/contador.png">
+                            <img id="img-projeto" src="imagens/contador.png">
                             <div class="info-container">
-                                <h2>Decodificador de texto</h2>
-                                <h3>Challenge Alura Codificador </h3>
+                                <h2>Contador</h2>
+                                <h3> Challenge </h3>
                             <h4>Jogo criado com HTML, CSS e JavaScript</h4>
                             <span class="experience-repo"><a href="https://github.com/samarafs/Codificador">
                                 <button>Repositório</button>
@@ -136,7 +138,7 @@
                             </div>
                     <div class="box-projects">
                     <div class="experiencia-box">
-                        <img src="imagens/tiro_alvo.png">
+                        <img id="img-projeto" src="imagens/tiro_alvo.png">
                         <div class="info-container">
                             <h2>Tiro ao Alvo</h2>
                             <h3>Challenge Alura tiro ao alvo </h3>
@@ -149,7 +151,7 @@
             </div>     
         </section>
         <section class="contact" id="contact">
-            <h3>Contact</h3>
+            <h3 class="section-title">Contact</h3>
             <h3 class="contact-subtext">Quer entrar em contato comigo?</h3>
             <div class="box-contact">
                     <h3 class="contact-subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
 body{
+    font-family: 'Raleway', sans-serif;
     background: linear-gradient(rgb(130, 0, 0), rgb(120, 39, 196),rgb(148, 22, 81),rgb(71, 46, 71));
     margin:2rem 3%;
 }
@@ -28,7 +30,7 @@ header h1{
     color: aliceblue;
 }
 
-nav ul{
+.menu-itens{
     display: flex;
 flex-direction: row;
 align-items: center;
@@ -51,43 +53,60 @@ header a:hover{
     flex-direction: row;
     margin-top: 3rem;
    color: bisque; 
-   justify-content: space-between;
+
     
 }
-.title ul{
-    display:flex;
-    justify-content: space-between;
-    font-size: 20px;;
-    margin: 8% 3% 0 0;
-    color: white;
-}
+
 .title a:hover{
     color: rgb(252, 252, 255);
 }
 .title a{
     color: rgb(12, 12, 12);
 }
-.esquerda{
-    width: 55%;    margin-left: 4rem;
-    align-items: center;
+
+.title-info{ 
+    margin-left: 4rem;
     margin-top: 5rem;
 }
 
-.esquerda h2{ 
+.title-info h2{ 
     font-size: 69px;
     }
-.esquerda p{
+.title-info p{
     font-size: 22px;
     margin:6% 3% 0 0 ;
 }
+.redes-sociais {
+    clear: right;
+    align-items: center;   
+     display: flex;
+    margin: 8% 5%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #e6e6e6;
+}
+.redes-sociais a{
+    font-size: 2em;
+}
+
+
+ .logo-rede{
+    height: 20px;
+ }
 .profile{
+    float: right;
     height: 500px;
      border-radius: 50%;
      margin-bottom: 3rem;
+     box-shadow: 10px 10px 20px rgb(116, 16, 173),10px -5px 30px rgb(173, 16, 113);
+     margin-left: 5rem
+;
      
 }
 /*about*/
 .about-me {
+    clear: right;
     color: blueviolet;
     background-color:rgb(247, 244, 244);
     padding: 40px;
@@ -136,7 +155,6 @@ header a:hover{
 
 .courses ul{
     display:flex;
-    flex-direction: row;
     margin: 0 5%;
     align-items: center;
     justify-content: space-between;
@@ -173,11 +191,10 @@ section .title-projects{
 }
 .experiencia-box img{
     border-radius:5%;
-    max-width: 700px;
-    min-width: 700px;
+   width: 700px;
 }
 .info-container{
-    color: rgb(83, 3, 121);
+    color: rgb(48, 7, 45);
     margin: 0 4rem;
 }
 .experience-repo button{
@@ -229,7 +246,7 @@ section .title-projects{
     cursor: pointer;
     transition: all 0.5s;
     height: 67px;
-    width: 328px;
+    width: auto;
     border: none;
 }
 .contato_botao:hover{
@@ -240,4 +257,67 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 2%;
+}
+@media screen and (max-width: 548px){
+	
+    header{
+        flex-direction: column;
+        display: initial;
+        align-items: initial;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    .menu-itens{
+        flex-direction: column;
+        margin-top: 2rem;
+       
+    }
+    .menu-itens li{
+    border: 1px solid #f0eaf7 ;
+
+    width: 100%;
+    padding: 1%;
+    margin: initial;
+    text-align: center;
+    
+}
+.title-info{
+    margin-left: auto;
+    margin-top: auto;
+}
+.title-info h2{
+    font-size: 30px;
+}
+.redes-sociais {
+    margin: 2em 3%;
+}
+.redes-sociais a{
+    font-size: 1em;
+}
+.profile{
+    height: 300px;
+    margin-left: auto;
+}
+.experiencia-box{
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 2em;
+}
+.experiencia-box h3, h2{
+    font-size: 28px;
+}
+.experiencia-box img{
+    width: 350px;
+}
+.info-container{
+    margin-top: 2em;
+}
+.box-contact{
+    flex-direction: column;
+    
+}
+.box-contact h3{
+    font-size: 30px;
+}
 }

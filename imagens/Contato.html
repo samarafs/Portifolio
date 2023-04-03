@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/html/contato.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+ <title>Contato</title>
+<style type="text/css" id="operaUserStyle"></style><link rel="stylesheet" href="./Contato_files/reset.css"><link rel="stylesheet" href="./Contato_files/style.css"><link rel="stylesheet" href="./Contato_files/style-contato.css"></head>
+<body>
+    <header>
+        <div class="caixa">
+        <h1><img src="./Contato_files/logo.png" alt="logo da barbearia alura"></h1>
+         <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/html/home.html">home</a></li>
+                <li><a href="http://127.0.0.1:5500/html/produtos.html">Produtos</a></li>
+                <li><a href="http://127.0.0.1:5500/html/contato.html">Contato</a></li>
+            </ul>  
+        </nav>
+    </div>   
+    </header>
+    <main>
+        <form action="http://127.0.0.1:5500/html/contato.html">
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" class="input-padrao" id="nomesobrenome" required="">
+
+            <label for="email">Email</label>
+            <input type="email" class="input-padrao" id="email" required="" placeholder="seumail@dominio.com">
+            <label for="telefone">telefone</label>
+            <input type="tel" class="input-padrao" id="telefone" required="" placeholder="(xxx) xxx xxx xxx">
+            
+            <label for="mensagem"></label>
+            <textarea name="" id="mensagem" class="input-padrao" cols="30" rows="20"></textarea>
+             <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone" value="telefone">Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" value="whatsapp" checked="">Whatsapp</label>
+             </fieldset>
+             <fieldset>
+                <legend>Qual o Horário que prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+             </fieldset>
+
+             <label class="checkbox" for="" checked=""><input type="checkbox"> de receber as novidades por email?</label>
+            <input type="submit" value="enviar formulario" class="enviar">
+        </form>
+        DiaHorário<table>
+            <tbody><tr>
+                </tr></tbody><thead></thead>
+                <thead></thead>
+            
+            <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Quartas</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Sextas</td>
+                <td>8h - 20h</td>
+            </tr>
+        </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="./Contato_files/logo-branco.png" alt="logo da barbearia alura">
+        <p class="copyright">© Copyright Barbearia Alura - 2019</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,54 @@
+
+header{
+    background-color: #BBBB;
+    padding: 20px 0  ;
+    width: 100%;
+}
+.caixa{
+    width: 940px;
+    position:relative ;
+    margin: 0 auto 0 auto;
+}
+nav{
+    position: absolute;
+    right: 40px;;
+    top: 110px;
+}
+nav li{ 
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: yellowgreen;
+}
+/*footer*/
+footer{
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+}
+@media screen and (max-width: 540px){
+    .caixa{
+        width: 100%;
+    }
+    .caixa li{
+		display: flex;
+		flex-wrap: wrap;
+        text-align: center;
+	}
+    h1{
+		text-align: center;
+	}
+    nav{
+		position: static;
+	}
+}
