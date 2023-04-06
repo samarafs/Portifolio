@@ -156,13 +156,24 @@
             <div class="box-contact">
                     <h3 class="contact-subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido
                         possível. </h3>
-                    <form class="form">
-                        <input class="contato-input" type="text" id="nome" placeholder="Nome">
-                        <input class="contato-input" type="text" id="email" placeholder="E-mail">
-                        <input class="contato-input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="contato-textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-                            placeholder="Sua mensagem"></textarea>
-                        <button class="contato_botao" onclick= "validarDatos()">Enviar mensagem</button>
+                    <form class="form" id="form">
+                        <div>
+                            <input class="contato-input" type="text" id="nome" placeholder="Nome" oninput="nameValidate()">
+                            <span class="span-required"> deve conter pelo menos 3 caracteres</span>
+                        </div>
+                        <div>
+                            <input class="contato-input" type="text" id="email" placeholder="E-mail" oninput="emailValidate()">
+                            <span class="span-required">coloque um email válido</span>
+                         </div>
+                        <div>
+                            <input class="contato-input" type="text" id="assunto" placeholder="Assunto" >
+                            <span class="span-required"></span>
+                         </div>
+                        <div>
+                            <textarea class="contato-textarea" rows="5" cols="40" id="mensagem" name="mensagem"placeholder="Sua mensagem"></textarea>
+                            <span class="span-required">deve conter 20 caracteres no mínimo</span>
+                         </div>
+                        <button type="submit" class="contato_botao" onclick="validardados()">Enviar mensagem</button>
                     </form>
                 </div>
         </section>

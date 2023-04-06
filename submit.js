@@ -1,36 +1,39 @@
-function validarDatos(){
-    event.preventDefault()
-    var error = document.querySelector('#error')
-    error.style.color = 'black'
-    
-    var expresion = /\w+@\w+\.+[a-z]/
+const form = document.getElementById('form')
+const campos = document.querySelectorAll('.contato-input')
+const span = document.querySelectorAll('.span-required')
+const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-    var mensajesError = []
-    
-    if (document.form.name.value=="" ) {
-        mensajesError.push("Campo nome é obrigatorio")  
-        document.form.name.focus()
-    
-    }else if (document.form.email.value=="") {
-        mensajesError.push("Campo e-mail é obrigatorio")
-        document.form.email.focus() 
-
-    }else if (document.form.assunto.value=="" ) {
-        mensajesError.push("Campo Assunto é obrigatorio")
-        document.form.assunto.focus() 
-
-    }else if (document.form.textarea.value=="" || document.form.textarea.value.length < 50 ){
-        mensajesError.push("Campo Mensagem é obrigatorio e deve conter pelo menos 50 carateres") 
-        document.form.textarea.focus()
-      
-    } else if (document.form.email.value.indexOf('@')==-1 ||
-    document.form.email.value.indexOf('.')==-1 ) {
-        mensajesError.push("e-mail inválido")
-    }
-
-
-    error.innerHTML = mensajesError.join(',')
-
+function validardados(){
+    nameValidate();
+    emailValidate();
     
 }
-    document.querySelector('form').addEventListener('submit',validardatos)
+//form.addEventListener('submit',(Event) =>{
+    //Event.preventDefaultS();
+    //nameValidate();
+    //emailValidate();
+    //conteudoValidate();
+//})
+function setError(index){
+    campos[index].style.border = '2px solid red'
+    span[index].style.display = 'block'
+}
+function removeError(index){
+    campos[index].style.border = ''
+    span[index].style.display = 'none'
+}
+function nameValidate(){
+    if(campos[0].value.length < 3){
+        setError(0)
+    }else{
+        removeError(0)
+    }
+}
+function emailValidate(){
+    if(emailRegex.test(campos[1].value)){
+        removeError(1)
+    }else{
+        setError(1)
+    }
+}
+//
